@@ -15,11 +15,6 @@ steps:
     version: '1.22.4'
 - task: Go@0
   inputs:
-    command: 'get'
-    arguments: '-d'
-    workingDirectory: '$(System.DefaultWorkingDirectory)'
-- task: Go@0
-  inputs:
     command: 'build'
     workingDirectory: '$(System.DefaultWorkingDirectory)'
 - task: Go@0

@@ -9,10 +9,10 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps: 
+steps:
 - task: GoTool@0
   inputs:
-    version: '1.22.4'
+    version: '1.19'
 - task: Go@0
   inputs:
     command: 'build'

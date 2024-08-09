@@ -33,3 +33,8 @@ steps:
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop
+- task: Docker@2
+  inputs:
+    repository: $(imageName)
+    command: build
+    Dockerfile: Dockerfile

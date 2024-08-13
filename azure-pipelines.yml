@@ -39,3 +39,6 @@ steps:
     repository: 'pipelinetestrepository'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: |
+      latest
+      $(Build.BuildId)
